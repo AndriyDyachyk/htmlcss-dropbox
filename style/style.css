@@ -20,6 +20,14 @@ section{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.float_left{
+    float: left;
+}
+
 .space_between{
     justify-content: space-between;
 }
@@ -57,7 +65,7 @@ header .container_full{
         background-color: pink;
     }
 
-    #business_plan .row{
+.row{
         margin: 50px 0px;
     }
 
@@ -88,6 +96,14 @@ header .container_full{
 
 .col_33{
     width: calc(100% / 3);
+}
+
+.col_40{
+    width: 40%;
+}
+
+.col_60{
+    width: 60%;
 }
 
 .col_67{
