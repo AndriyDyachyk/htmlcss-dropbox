@@ -21,15 +21,32 @@ section{
 }
 
 .wrap{
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 .float_left{
     float: left;
 }
 
+.float_right{
+    float: right;
+}
+
+.display_flex_row_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .space_between{
     justify-content: space-between;
+}
+
+.display_inline_block{
+    display: inline-block;
+}
+
+.vertical_align_top{
+    vertical-align: top;
 }
 
 /* end properties */
@@ -40,6 +57,10 @@ header .col{
     width: 400px;
     background-color: black;
     height: 80px;
+}
+
+header .row{
+    margin: 0;
 }
 
 header .container_full{
@@ -65,15 +86,38 @@ header .container_full{
         background-color: pink;
     }
 
-.row{
+    .row{
         margin: 50px 0px;
     }
 
     /* end business plan section */
+    /* clients section */
+
+    #clients{
+        background-color: rgb(245, 245, 245);
+    }
+
+    /* end clients section */
+    /* prova gratuita section */
+
+    #prova_gratuita{
+        background-color: rgb(245, 245, 245);
+    }
+
+    /* end prova gratuita section */
 /* end main content */
 
 .col_100, .w_100, .container_full{
     width: 100%;
+}
+
+.container_full{
+    margin: 0 auto;
+}
+
+.container_1920p{
+    width: 1920p;
+    margin: 0 auto;
 }
 
 .container_1180p{
@@ -92,6 +136,7 @@ header .container_full{
 
 .col_30{
     width: 30%;
+    margin: auto;
 }
 
 .col_33{
@@ -100,6 +145,12 @@ header .container_full{
 
 .col_40{
     width: 40%;
+}
+
+.col_square_50{
+    width: 320px;
+    background-color: red;
+    height: 320px;
 }
 
 .col_60{
@@ -113,4 +164,16 @@ header .container_full{
 .col_100, .col_30{
     height: 300px;
     background-color: cyan;
+}
+
+.client_col_33_side{
+    min-width: 320px;
+    width: 640px;
+    max-width: 640px;
+}
+
+.client_col_33_center{
+    width: calc(100% / 3);
+    min-width: 500px;
+    max-width: 640px;
 }
