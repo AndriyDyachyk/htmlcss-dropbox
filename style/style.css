@@ -4,16 +4,18 @@
     box-sizing: border-box;
 }
 
-header .container{
-    width: 100%;
-    background-color: grey;
-    height: 80px;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.row{
-    width: 100%;
+section{
+    margin-top: 80px;
 }
 
+/* properties */
 .display_flex{
     display: flex;
 }
@@ -22,8 +24,77 @@ header .container{
     justify-content: space-between;
 }
 
+/* end properties */
+
+/* header layout */
+
 header .col{
     width: 400px;
     background-color: black;
     height: 80px;
+}
+
+header .container_full{
+    background-color: grey;
+    height: 80px;
+}
+
+/* end header layout */
+
+/* main layout */
+
+    /* jumbotron section */
+
+    #jumbotron{
+        background-color: aqua;
+    }
+
+    /* end jumbotron section */
+
+    /* business plan section */
+
+    #business_plan{
+        background-color: pink;
+    }
+
+    #business_plan .row{
+        margin: 50px 0px;
+    }
+
+    /* end business plan section */
+/* end main content */
+
+.col_100, .w_100, .container_full{
+    width: 100%;
+}
+
+.container_1180p{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.container_1000p{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+}
+
+.col_30{
+    width: 30%;
+}
+
+.col_33{
+    width: calc(100% / 3);
+}
+
+.col_67{
+    width: calc(100% / (2/3));
+}
+
+.col_100, .col_30{
+    height: 300px;
+    background-color: cyan;
 }
