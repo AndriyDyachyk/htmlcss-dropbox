@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header .container{
+    width: 100%;
+    background-color: grey;
+    height: 80px;
+}
+
+.row{
+    width: 100%;
+}
+
+.display_flex{
+    display: flex;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+header .col{
+    width: 400px;
+    background-color: black;
+    height: 80px;
+}
