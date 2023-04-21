@@ -7,16 +7,25 @@
         <title>DropBox</title>
         <link rel="stylesheet" href="./style/style.css">
         <script src="https://kit.fontawesome.com/200b75a9a1.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="container_full">
                 <div class="row display_flex space_between">
-                    <div class="col">
-                    
+                    <div class="menu_col">
+                        <img src="./img/logo-small.png" alt="dropbox logo" class="logo_small in_line">
+                        <button class="just_text in_line menu_button">Perchè Dropbox</button>
+                        <button class="just_text in_line menu_button">Funzioni</button>
+                        <button class="just_text in_line menu_button">Piani e Prezzi</button>
                     </div>
-                    <div class="col">
-
+                    <div class="menu_col">
+                        <a href="#faq">Supporto</a>
+                        <button class="just_text in_line menu_button">Contatta l'ufficio vendite</button>
+                        <button class="just_text in_line menu_button">Accedi</button>
+                        <button class="blue_button in_line" style="font-size: 16px;">Inizia</button>
                     </div>
                 </div>
             </div>
@@ -30,12 +39,10 @@
                     </div>
                     <div class="row display_flex">
                         <div class="col_33">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex explicabo vel, porro quis voluptatibus quidem quibusdam optio sequi eos doloribus excepturi eaque ratione veritatis vero deleniti cum. Eligendi, ad.</p>
-                            <a href="">Inizia la tua prova gratuita</a>
+                            <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. DropBox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                            <button class="blue_button">Inizia la tua prova gratuita</button>
                             <span>Annulla in qualsiasi momento</span>
-                            <a href="">
-                                <i aria-hidden="true" class="fa-solid fa-arrow-down"></i>
-                            </a>
+                            <a href="#business_plan" class="go_down" style="text-decoration: none;"></a>
                         </div>
                         <div class="col_67">
                             <img src="./img/jumbo.png" alt="" class="w_100">
@@ -48,15 +55,158 @@
             <section id="business_plan">
                 <div class="container_1000p">
                     <div class="row">
-                        <div class="col_100"></div>
+                        <div class="col_100">
+                            <h2>Trova il piano business che fa per te</h2>
+                        </div>
+                    <div class="row">
+                        <div class="col_100">
+                            <input type="radio" id="fatturazione_mensile" name="fatturazione" value="fatturazione_mensile" >
+                                <label for="fatturazione_mensile">Fatturazione mensile</label>
+                            <input type="radio" id="fatturazione_annuale" name="fatturazione" value="fatturazione_annuale">
+                                <label for="fatturazione_annuale">Fatturazione annuale</label>
+                        </div>
                     </div>
                     <div class="row display_flex space_between">
-                        <div class="col_30"></div>
-                        <div class="col_30"></div>
-                        <div class="col_30"></div>
+                        <!-- Piano n°1 -->
+                        <div class="col_30">
+                            <div class="title">
+                                <span>
+                                    <i class="fa-solid fa-user"></i> Singolo
+                                </span>
+                            </div>
+                            <div class="contratto">
+                                <div>
+                                    <h3>Professional</h3>
+                                    <p class="prezzo">&euro; 12.00</p>
+                                    <p class="periodo">/mese</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="single_user"><span>1 utente</span></li>
+                                        <li class="folder"><span> TB di spazio di archiviazione sicuro</span></li>
+                                        <li class="share"><span>Funzioni di produttività premium e condivisione dile semplice e sicura</span></li>
+                                    </ul>
+                                </div>
+                                <button class="blue_button w_100">Prova gratuita per 30 giorni</button>
+                                <div>
+                                    <span>oppure </span><a href="">acquista ora</a>
+                                </div>
+                                <div class="short_border_line"></div>
+                                <div>
+                                </div>
+                                <div>
+                                    <h4>Punti salienti del piano</h4>
+                                    <ul>
+                                        <li class="blue_check"><span>Invia file fino a 100GB con DropBox Transfer</span></li>
+                                        <li class="blue_check">Cartelle offline su dispositivi mobili</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fine Piano n°1 -->
+                        <!-- Piano n°2 -->
+                        <div class="col_30">
+                            <div class="title">
+                                <span>
+                                    <i class="fa-solid fa-users"></i> Team
+                                </span>
+                            </div>
+                            <div class="contratto">
+                                <div>
+                                    <h3>Advanced</h3>
+                                    <p class="prezzo">&euro; 18.00</p>
+                                    <p class="periodo">/utente/mese</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="multiple_user"><span>3 o più utenti</span></li>
+                                        <li class="folder"><span> Tutto lo spazio di cui ha bisogno il tuo team</span></li>
+                                        <li class="share"><span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span></li>
+                                    </ul>
+                                </div>
+                                <button class="blue_button w_100">Prova gratuita per 30 giorni</button>
+                                <div>
+                                    <span>oppure </span><a href="">acquista ora</a>
+                                </div>
+                                <div class="short_border_line"></div>
+                                <div>
+                                </div>
+                                <div>
+                                    <h4>Punti salienti del piano</h4>
+                                    <ul>
+                                        <li class="blue_check"><span>Nessun limite di spazio per file</span></li>
+                                        <li class="blue_check"><span>Cartelle offline su dispositivi mobili</span></li>
+                                        <li class="blue_check"><span>Risparmio del 50% rispetto alle iscrizioni single</span></li>
+                                        <li class="blue_check"><span>Possibilità di inserire nuovi membri del team</span></li>
+                                        <li class="blue_check"><span>Gestione dei permessi in base ai ruoli</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fine Piano n°2 -->
+                        <!-- Piano n°3 -->
+                        <div class="col_30">
+                            <div class="title">
+                                <span>
+                                    <i class="fa-solid fa-building"></i> Azienda
+                                </span>
+                            </div>
+                            <div class="contratto">
+                                <div>
+                                    <h3>Enterprise</h3>
+                                    <p class="prezzo">Contattaci</p>
+                                    <p class="periodo">-</p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="single_user"><span>10 o più utenti</span></li>
+                                        <li class="folder"><span> Soluzioni personalizzabili per la tua azienda</span></li>
+                                        <li class="share"><span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span></li>
+                                    </ul>
+                                </div>
+                                <button class="blue_button w_100">Contattaci</button>
+                                <div>
+                                    <span>oppure </span><a href="">acquista ora</a>
+                                </div>
+                                <div class="short_border_line"></div>
+                                <div>
+                                </div>
+                                <div>
+                                    <h4>Punti salienti del piano</h4>
+                                    <ul>
+                                        <li class="blue_check"><span>Cartelle offline su dispositivi mobili</span></li>
+                                        <li class="blue_check"><span>Servizio assistenza 24/h</span></li>
+                                        <li class="blue_check"><span>Possibilità di personalizzazione totale</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fine Piano n°3 -->
                     </div>
                     <div class="row">
-                        <div class="col_100"></div>
+                        <div class="col_100">
+                            <div class="title">
+                                <span>
+                                    <i class="fa-solid fa-building"></i> Team
+                                </span>
+                            </div>
+                            <div class="contratto">
+                                <div class="row display_flex">
+                                    <div class="col_67">
+                                        <h3>Enterprise</h3>
+                                        <p class="prezzo">
+                                            Contatta l'ufficio vendite per i prezzi
+                                        </p>
+                                        <p class="periodo spacing_30px">
+                                            Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT su qualsiasi scala
+                                        </p>
+                                    </div>
+                                    <div class="col_33 display_flex justify_content_flex_end">
+                                        <button class="blue_button">Contatta l'ufficio vendite</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -70,7 +220,7 @@
                         </div>
                         <div class="col_40">
                             <h3>Entra in contatto con un partner DropBox</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi consectetur atque, deleniti asperiores debitis inventore, deserunt ea sed officiis, quisquam earum? Ab obcaecati maiores accusantium fuga voluptate, debitis voluptates quisquam?</p>
+                            <p>Trova un pattern DropBox e HelloSign di fiducia.Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione , intergrazione , gestione e supporto continui.</p>
                             <a href="">Trova un partner</a>
                         </div>
                     </div>
@@ -85,34 +235,34 @@
                     </div>
                     <div class="row display_flex wrap">
                         <div class="col_30 float_left">
-                            <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
+                            <img src="./img/business-feature-switching-tools.png" alt="" class="w_100">
                             <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
+                        </div>
+                        <div class="col_30 float_left">
+                            <img src="./img/business-feature-send-files-it.png" alt="" class="w_100">
+                            <h3>Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
+                        </div>
+                        <div class="col_30 float_left">
+                            <img src="./img/business-feature-coordinate-it.png" alt="" class="w_100">
+                            <h3>Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
                         </div>
                         <div class="col_30 float_left">
                             <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
                             <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
                         </div>
                         <div class="col_30 float_left">
-                            <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
+                            <img src="./img/business-feature-multi-device.png" alt="" class="w_100">
                             <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
                         </div>
                         <div class="col_30 float_left">
-                            <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
+                            <img src="./img/business-feature-security.png" alt="" class="w_100">
                             <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
-                        </div>
-                        <div class="col_30 float_left">
-                            <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
-                            <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
-                        </div>
-                        <div class="col_30 float_left">
-                            <img src="./img/business-feature-integrations-it.png" alt="" class="w_100">
-                            <h3>Passa di meno da uno strumento all'altro</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam quod fugiat culpa debitis, animi autem. Enim repellat minima voluptatum dicta harum unde, reprehenderit commodi quod laborum assumenda modi saepe.</p>
+                            <p>Porta a termine le attività quotidiane con uno strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazione di Google, file Microsoft Office e DropBox Paper direttamente da DropBox.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -124,21 +274,69 @@
             <!-- end dropbox operations section -->
             <!-- Clients section -->
             <section id="clients">
-                <div class="container_1920p">
-                    <div class="row display_flex">
-                        <div class=".client_col_33_side wrap display_flex_row_reverse">
-                            <div class="col_square_50 float_right">1</div>
-                            <div class="col_square_50 float_right">2</div>
-                            <div class="col_square_50 float_right">3</div>
-                            <div class="col_square_50 float_right">4</div>
+                <div class="container_100vw">
+                    <div class="row display_flex center">
+                        <div class=".client_col_side wrap display_flex_row_reverse">
+                            <div class="col_square_50 lime_green float_right selected">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/designit.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 porpora float_right">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/arizona_state_university.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 azzurro float_right">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/university_of_florida.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 rosso_acceso float_right">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/topps.svg" alt=""></div>
+                                    </div>
+                                </div>
                         </div>
-                        <div class="client_col_33_center">
+                        <div class="client_col_center">
+                            <div class="row">
+                                <div class="client_col_content">
+                                    <img src="./img/designit.svg" alt="" class="client_item">
+                                    <div class="border_line"></div>
+                                    <p class="client_item">"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto DropBox e DropBox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto DropBox Paper".</p>
+                                    <p class="client_item">Morten Thomsen, Global IT Lead</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class=".client_col_33_side display_flex wrap">
-                            <div class="col_square_50 float_left">1</div>
-                            <div class="col_square_50 float_left">2</div>
-                            <div class="col_square_50 float_left">3</div>
-                            <div class="col_square_50 float_left">4</div>
+                        <div class=".client_col_side display_flex wrap center right">
+                            <div class="col_square_50 rosso_scuro float_left">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/world_bicycle_relief.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 azzurro_chiaro float_left">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/hearst_corp.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 blu_scuro float_left">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/lonely_planet.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            <div class="col_square_50 giallo_senape float_left">
+                                <div class="centratura">
+                                    <div class="article">
+                                        <img src="./img/clear_channel.svg" alt=""></div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -147,8 +345,8 @@
             <!-- prova gratuita section -->
             <section id="prova_gratuita">
                 <div class="container_1000p display_flex space_between">
-                    <h2 class="special display_inline_block vertical_align_top">Porta Dropbox Business <br> nella tua azienda</h2>
-                    <a href="" class="vertical_align_top">Inizia la tua prova gratuita</a>
+                    <h2 class="special display_inline_block">Porta Dropbox Business <br> nella tua azienda</h2>
+                    <a class="white_button">Inizia la tua prova gratuita</a>
                 </div>
             </section>
             <!-- end prova gratuita section -->
@@ -159,23 +357,17 @@
                     <hr>
                     <div class="display_flex space_between">
                         <h4 class="display_inline_block">Qual è la differenza tra Dropbox Business Standard e Business Advanced?</h4>
-                        <a href="">
-                            <button><i class="fa-solid fa-angle-down"></i></button>
-                        </a>
+                        <button class="border_none"><i class="fa-solid fa-angle-down"></i></button>
                     </div>
                     <hr>
                     <div class="display_flex space_between">
                         <h4 class="display_inline_block">Qual è la differenza tra Dropbox Business Standard e Business Advanced?</h4>
-                        <a href="">
-                            <button><i class="fa-solid fa-angle-down"></i></button>
-                        </a>
+                        <button class="border_none"><i class="fa-solid fa-angle-down"></i></button>
                     </div>
                     <hr>
                     <div class="display_flex space_between">
                         <h4 class="display_inline_block">Qual è la differenza tra Dropbox Business Standard e Business Advanced?</h4>
-                        <a href="" class="vertical_align_center">
-                            <button class="border_none "><i class="fa-solid fa-angle-down"></i></span></button>
-                        </a>
+                        <button class="border_none"><i class="fa-solid fa-angle-down"></i></button>
                     </div>
                     <hr>
                 </div>
@@ -185,12 +377,12 @@
         <footer>
             <section id="info_e_privacy">
                 <div class="container_1180p">
-                    <div class="spacing_30px"></div>
+                    <div class="height_30px"></div>
                     <div class="row display_flex space_between">
                         <div class="col_15">
                             <h3>Dropbox</h3>
                             <ul>
-                                <li><button>Applicazione desktop</button></li>
+                                <li><button class="border_none">Applicazione desktop</button></li>
                                 <li><a href="">Perchè Dropbox</a></li>
                                 <li><a href="">Piani</a></li>
                                 <li><a href="">Sicurezza</a></li>
@@ -200,7 +392,7 @@
                         <div class="col_15">
                             <h3>Dropbox</h3>
                             <ul>
-                                <li><button>Applicazione desktop</button></li>
+                                <li><button class="border_none">Applicazione desktop</button></li>
                                 <li><a href="">Perchè Dropbox</a></li>
                                 <li><a href="">Piani</a></li>
                                 <li><a href="">Sicurezza</a></li>
@@ -210,7 +402,7 @@
                         <div class="col_15">
                             <h3>Dropbox</h3>
                             <ul>
-                                <li><button>Applicazione desktop</button></li>
+                                <li><button class="border_none">Applicazione desktop</button></li>
                                 <li><a href="">Perchè Dropbox</a></li>
                                 <li><a href="">Piani</a></li>
                                 <li><a href="">Sicurezza</a></li>
@@ -220,7 +412,7 @@
                         <div class="col_15">
                             <h3>Dropbox</h3>
                             <ul>
-                                <li><button>Applicazione desktop</button></li>
+                                <li><button class="border_none">Applicazione desktop</button></li>
                                 <li><a href="">Perchè Dropbox</a></li>
                                 <li><a href="">Piani</a></li>
                                 <li><a href="">Sicurezza</a></li>
@@ -230,7 +422,7 @@
                         <div class="col_15">
                             <h3>Dropbox</h3>
                             <ul>
-                                <li><button>Applicazione desktop</button></li>
+                                <li><button class="border_none">Applicazione desktop</button></li>
                                 <li><a href="">Perchè Dropbox</a></li>
                                 <li><a href="">Piani</a></li>
                                 <li><a href="">Sicurezza</a></li>
